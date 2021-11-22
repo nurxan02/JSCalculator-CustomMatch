@@ -2,22 +2,22 @@ class CustomMatch {
    constructor(number) {
       this.number = number;
    }
-   Pilus(num) {
+   Pilus = function(num) {
       this.number += num;
       return this;
    }
-   Minus(num) {
+   Minus = function(num) {
       this.number -= num;
       return this;
    }
-   Multiply(num) {
+   Multiply = function(num) {
       this.number *= num;
       return this;
    }
-   Dvide(num) {
+   Divide = function(num) {
       this.number /= num;
       return this;
    }
 }
-result = new CustomMatch(50).Pilus(6).Minus(30).Multiply(3).Divide(2);
-console.log(Object.value(result)[0]);
+var result = new CustomMatch(50).Pilus(6).Minus(30).Multiply(3).Divide(2);
+console.log(Object.values(result)[4]);
